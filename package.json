@@ -1,0 +1,27 @@
+{
+  "name": "sensei-web",
+  "version": "0.0.0",
+  "description": "web page of sensei",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:soygustavogonzales/web-sensei.git"
+  }
+  ,"dependencies":{
+    "express":"3.4.8",
+    "jade":"1.2.0"
+  }
+  ,"keywords": [
+    "web",
+    "sensei"
+  ],
+  "author": "Gustavo Gonzales",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soygustavogonzales/web-sensei/issues"
+  },
+  "homepage": "https://github.com/soygustavogonzales/web-sensei"
+}
