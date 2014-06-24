@@ -8,11 +8,11 @@ l = console.log,
 server = http.createServer(app);
 
 app.configure(function(){
-	app.set('port',4560||process.env.PORT)
+	app.set('port',4500||process.env.PORT)
 	app.use(express.static(__dirname+'/public'))
 	app.use(express.static(__dirname+'/views'))
 	//app.use('/views',__dirname+'/views')
-
+	/*
 	app.use(function(req,res){
  	res.send(404,"<h1>OOPS!!page not found</h1>")
  });
@@ -20,16 +20,21 @@ app.configure(function(){
  	res.status(err.status||404)
 		res.send(err.message)
  });
-	/*
 	*/
 })
 
 //routes(app,jade,fs,__dirname);
 
 	app.get('/',function(req,res){
-			res.sendfile('/views/index.html');
+			//res.sendfile(__dirname+'/views/index_.html');
+			//console.log(__dirname)
+			res.render('index.jade')
 	})
-
+	app.get('/index2',function(req,res){
+			res.sendfile(__dirname+'/views/index_.html');
+			//console.log(__dirname)
+			//res.render('index_.jade')
+	})
 server.listen(app.get('port'),function(){
 	l("Server runing in port: "+app.get('port'));
 })

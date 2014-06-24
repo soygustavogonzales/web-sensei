@@ -1,647 +1,126 @@
-doctype html
-//if IE 8
-  html.ie8(lang='en')  
-//if IE 9
-  html.ie9(lang='en')  
-// [if !IE] <!
-html(lang='en')
-  // <![endif]
-  head
-    title Sensei
-    // Meta
-    meta(charset='utf-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    meta(name='description', content='')
-    meta(name='author', content='')
-    // CSS Global Compulsory
-    link(rel='stylesheet', href='/plugins/bootstrap/css/bootstrap.css')
-    link(rel='stylesheet', href='/css/style.css')
-    link(rel='stylesheet', href='/css/headers/header1.css')
-    link(rel='stylesheet', href='/css/responsive.css')
-    link(rel='shortcut icon', href='favicon.ico')
-    // CSS Implementing Plugins
-    link(rel='stylesheet', href='/plugins/font-awesome/css/font-awesome.css')
-    link(rel='stylesheet', href='/plugins/flexslider/flexslider.css')
-    link(rel='stylesheet', href='/plugins/bxslider/jquery.bxslider.css')
-    link(rel='stylesheet', href='/plugins/layer_slider/css/layerslider.css', type='text/css')
-    // CSS Theme
-    link#style_color(rel='stylesheet', href='/css/themes/default.css')
-    link#style_color-header-1(rel='stylesheet', href='/css/themes/headers/default.css')
-  body
-    // === Top ===
-    .top
-      .container
-        ul.loginbar.pull-right
-          li
-            i.icon-globe
-            a Languages
-            ul.lenguages
-              li.active
-                a(href='#')
-                  | English
-                  i.icon-ok
-              li
-                a(href='#') Spanish
-              li
-                a(href='#') Russian
-              li
-                a(href='#') German
-          li.devider
-          li
-            a(href='page_faq.html') Help
-          li.devider
-          li
-            a(href='page_login.html') Login
-    // /top
-    // === End Top ===
-    // === Header ===
-    .header
-      .navbar.navbar-default(role='navigation')
-        .container
-          // Brand and toggle get grouped for better mobile display
-          .navbar-header
-            button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-responsive-collapse')
-              span.sr-only Toggle navigation
-              span.icon-bar
-              span.icon-bar
-              span.icon-bar
-            a.navbar-brand(href='index.html')
-              img#logo-header(src='/img/logo1-default.png', alt='Logo')
-          // Collect the nav links, forms, and other content for toggling
-          .collapse.navbar-collapse.navbar-responsive-collapse
-            ul.nav.navbar-nav.navbar-right
-              li.dropdown.active
-                a.dropdown-toggle(href='#', data-toggle='dropdown', data-hover='dropdown', data-delay='0', data-close-others='false')
-                  | Home
-                  i.icon-angle-down
-                ul.dropdown-menu
-                  li
-                    a(href='index.html') Option 1&colon; Default Page
-                  li.active
-                    a(href='page_home1.html') Option 2&colon; Layer Slider
-                  li
-                    a(href='page_home2.html') Option 3&colon; Revolution Slider
-                  li
-                    a(href='page_home3.html') Option 4&colon; Amazing Content
-                  li
-                    a(href='page_home4.html') Option 5&colon; Home Sidebar
-                  li
-                    a(href='page_home5.html') Option 6&colon; Home Flatty
-                  li
-                    a(href='page_home6.html') Option 7&colon; Home Magazine
-                  li
-                    a(href='page_home7.html') Option 8&colon; Home Portfolio
-              li.dropdown
-                a.dropdown-toggle(href='#', data-toggle='dropdown', data-hover='dropdown', data-delay='0', data-close-others='false')
-                  | Pages
-                  i.icon-angle-down
-                ul.dropdown-menu
-                  li
-                    a(href='page_about.html') About Us
-                  li
-                    a(href='page_about1.html') About Us Option
-                  li
-                    a(href='page_services.html') Services
-                  li
-                    a(href='page_services1.html') Services Option
-                  li
-                    a(href='page_pricing.html') Pricing Tables
-                  li
-                    a(href='page_invoice.html') Invoice Page
-                  li
-                    a(href='page_meet_our_team.html') Meet Our Team
-                  li
-                    a(href='page_coming_soon.html') Coming Soon
-                  li
-                    a(href='page_faq.html') FAQs Page
-                  li
-                    a(href='page_search.html') Funny Boxes
-                  li
-                    a(href='page_gallery.html') Gallery Page
-                  li
-                    a(href='page_registration.html') Registration Page
-                  li
-                    a(href='page_registration1.html') Registration Option
-                  li
-                    a(href='page_login.html') Login Page
-                  li
-                    a(href='page_login1.html') Login Option
-                  li
-                    a(href='page_404_error.html') 404 Error
-                  li
-                    a(href='page_404_error1.html') 404 Error Option
-                  li
-                    a(href='page_clients.html') Clients Page
-                  li
-                    a(href='page_privacy.html') Privacy Policy
-                  li
-                    a(href='page_terms.html') Terms Of Service
-                  li
-                    a(href='page_2_columns_left.html') 2 Columns Page Left
-                  li
-                    a(href='page_2_columns_right.html') 2 Columns Page Right
-                  li
-                    a(href='page_3_columns.html') 3 Columns Page
-              li.dropdown
-                a.dropdown-toggle(href='#', data-toggle='dropdown', data-hover='dropdown', data-delay='0', data-close-others='false')
-                  | Features
-                  i.icon-angle-down
-                ul.dropdown-menu
-                  li
-                    a(href='feature_grid.html') Grid Layout
-                  li
-                    a(href='feature_boxes.html') Content Boxes
-                  li
-                    a(href='feature_typography.html') Typography
-                  li
-                    a(href='feature_tagline_boxes.html') Tagline Boxes
-                  li
-                    a(href='feature_buttons.html') Buttons
-                  li
-                    a(href='feature_icons.html') Icons
-                  li
-                    a(href='feature_thumbails.html') Thumbails
-                  li
-                    a(href='feature_components.html') Components
-                  li
-                    a(href='feature_accardion_and_tabs.html') Accardion and Tabs
-                  li
-                    a(href='feature_navigations.html') Navigations
-                  li
-                    a(href='feature_tables.html') Tables
-                  li
-                    a(href='feature_forms.html') Forms
-                  li
-                    a(href='feature_testimonials.html') Testimonials
-              li.dropdown
-                a.dropdown-toggle(href='#', data-toggle='dropdown', data-hover='dropdown', data-delay='0', data-close-others='false')
-                  | Portfolio
-                  i.icon-angle-down
-                ul.dropdown-menu
-                  li
-                    a(href='portfolio_text_blocks.html') Portfolio Text Blocks
-                  li
-                    a(href='portfolio_2_column.html') Portfolio 2 Columns
-                  li
-                    a(href='portfolio_3_column.html') Portfolio 3 Columns
-                  li
-                    a(href='portfolio_4_column.html') Portfolio 4 Columns
-                  li
-                    a(href='portfolio_item.html') Portfolio Item Option 1
-                  li
-                    a(href='portfolio_item1.html') Portfolio Item Option 2
-              li.dropdown
-                a.dropdown-toggle(href='#', data-toggle='dropdown', data-hover='dropdown', data-delay='0', data-close-others='false')
-                  | Blog
-                  i.icon-angle-down
-                ul.dropdown-menu
-                  li
-                    a(href='blog_page.html') Blog Page
-                  li
-                    a(href='blog_large.html') Blog Large
-                  li
-                    a(href='blog_medium.html') Blog Medium
-                  li
-                    a(href='blog_full_width.html') Blog Full Width
-                  li
-                    a(href='blog_left_sidebar.html') Blog Left Sidebar
-                  li
-                    a(href='blog_right_sidebar.html') Blog Right Sidebar
-                  li
-                    a(href='blog_item_option1.html') Blog Item Option 1
-                  li
-                    a(href='blog_item_option2.html') Blog Item Option 2
-              li.dropdown
-                a.dropdown-toggle(href='#', data-toggle='dropdown', data-hover='dropdown', data-delay='0', data-close-others='false')
-                  | Contacts
-                  i.icon-angle-down
-                ul.dropdown-menu
-                  li
-                    a(href='page_contact1.html') Contacts Default
-                  li
-                    a(href='page_contact2.html') Contacts Option 1
-                  li
-                    a(href='page_contact3.html') Contacts Option 2
-              li.hidden-sm
-                a.search
-                  i.icon-search.search-btn
-            .search-open
-              .input-group
-                input.form-control(type='text', placeholder='Search')
-                span.input-group-btn
-                  button.btn-u(type='button') Go
-              // /input-group
-          // /navbar-collapse
-    // /header
-    // === End Header ===
-    // === Slider ===
-    .layer_slider
-      #layerslider-container-fw
-        #layerslider(style='width: 100%; height: 500px; margin: 0px auto; ')
-          // First Slide
-          .ls-layer(style='slidedirection: right; transition2d: 24,25,27,28; ')
-            img.ls-bg(src='/img/sliders/layer/bg1.jpg', alt='Slide background')
-            img.ls-s-1(src='/img/mockup/iphone1.png', alt='Slider Image', style=' top:110px; left: 240px; slidedirection : left; slideoutdirection : bottom; durationin : 1500; durationout : 1500; ')
-            img.ls-s-1(src='/img/mockup/iphone.png', alt='Slider image', style=' top:60px; left: 40px; slidedirection : left; slideoutdirection : bottom; durationin : 2500; durationout : 2500; ')
-            span.ls-s-1(style=' text-transform: uppercase; line-height: 45px; font-size:35px; color:#fff; top:200px; left: 590px; slidedirection : top; slideoutdirection : bototm; durationin : 3500; durationout : 3500; ')
-              | Fully Responsive
-              br
-              | Bootstrap 3 Template
-            a.btn-u.btn-u-orange.ls-s1(href='#', style=' padding: 9px 20px; font-size:25px; top:340px; left: 590px; slidedirection : bottom; slideoutdirection : top; durationin : 3500; durationout : 3500; ')
-              | Download Now
-          // End First Slide
-          // Second Slide
-          .ls-layer(style='slidedirection: top; ')
-            img.ls-bg(src='/img/bg/5.jpg', alt='Slide background')
-            i.icon-chevron-sign-right.ls-s-1(style=' color: #fff; font-size: 24px; top:70px; left: 40px; slidedirection : left; slideoutdirection : top; durationin : 1500; durationout : 500; ')
-            span.ls-s-2(style=' color: #fff; font-weight: 200; font-size: 22px; top:70px; left: 70px; slidedirection : top; slideoutdirection : bottom; durationin : 1500; durationout : 500; ')
-              | Fully Responsive and Easy to Customize
-            i.icon-chevron-sign-right.ls-s-1(style=' color: #fff; font-size: 24px; top:120px; left: 40px; slidedirection : left; slideoutdirection : top; durationin : 2500; durationout : 1500; ')
-            span.ls-s-2(style=' color: #fff; font-weight: 200; font-size: 22px; top:120px; left: 70px; slidedirection : top; slideoutdirection : bottom; durationin : 2500; durationout : 1500; ')
-              | Revolution and Layer Slider Included
-            i.icon-chevron-sign-right.ls-s-1(style=' color: #fff; font-size: 24px; top:170px; left: 40px; slidedirection : left; slideoutdirection : top; durationin : 3500; durationout : 3500; ')
-            span.ls-s-2(style=' color: #fff; font-weight: 200; font-size: 22px; top:170px; left: 70px; slidedirection : top; slideoutdirection : bottom; durationin : 3500; durationout : 2500; ')
-              | 1000&plus; Glyphicons Pro and Font Awesome Icons
-            i.icon-chevron-sign-right.ls-s-1(style=' color: #fff; font-size: 24px; top:220px; left: 40px; slidedirection : left; slideoutdirection : top; durationin : 4500; durationout : 3500; ')
-            span.ls-s-2(style=' color: #fff; font-weight: 200; font-size: 22px; top:220px; left: 70px; slidedirection : top; slideoutdirection : bottom; durationin : 4500; durationout : 3500; ')
-              | Revolution and Layer Slider Included
-            i.icon-chevron-sign-right.ls-s-1(style=' color: #fff; font-size: 24px; top:270px; left: 40px; slidedirection : left; slideoutdirection : top; durationin : 5500; durationout : 4500; ')
-            span.ls-s-2(style=' color: #fff; font-weight: 200; font-size: 22px; top:270px; left: 70px; slidedirection : top; slideoutdirection : bottom; durationin : 5500; durationout : 4500; ')
-              | 60&plus; Template Pages and 20&plus; Plugins Included
-            a.btn-u.btn-u-blue.ls-s1(href='#', style=' padding: 9px 20px; font-size:25px; top:340px; left: 40px; slidedirection : bottom; slideoutdirection : bottom; durationin : 6500; durationout : 3500; ')
-              | Twitter Bootstrap 3
-            img.ls-s-1(src='/img/mockup/iphone1.png', alt='Slider Image', style=' top:30px; left: 650px; slidedirection : right; slideoutdirection : bottom; durationin : 1500; durationout : 1500; ')
-          // End Second Slide
-          // Third Slide
-          .ls-layer(style='slidedirection: right; transition2d: 92,93,105; ')
-            img.ls-bg(src='/img/sliders/layer/bg2.jpg', alt='Slide background')
-            span.ls-s-1(style=' color: #777; line-height:45px; font-weight: 200; font-size: 35px; top:100px; left: 50px; slidedirection : top; slideoutdirection : bottom; durationin : 1000; durationout : 1000; ')
-              | Unify is Fully Responsive
-              br
-              | Twitter Bootstrap 3 Template
-            a.btn-u.btn-u-green.ls-s-1(href='#', style=' padding: 9px 20px; font-size:25px; top:220px; left: 50px; slidedirection : bottom; slideoutdirection : bottom; durationin : 2000; durationout : 2000; ')
-              | Find Out More
-            img.ls-s-1(src='/img/mockup/iphone.png', alt='Slider Image', style=' top:30px; left: 670px; slidedirection : right; slideoutdirection : bottom; durationin : 3000; durationout : 3000; ')
-          // End Third Slide
-    // /layer_slider
-    // === End Slider ===
-    // === Purchase Block ===
-    .purchase
-      .container
-        .row
-          .col-md-9
-            span Unify is a clean and fully responsive incredible Template&period;
-            p
-              | At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi  vehicula sem ut volutpat&period; Ut non libero magna fusce condimentum eleifend enim a feugiat&period;
-          .col-md-3
-            a.btn-buy.hover-effect(href='#') Purchase Now
-    // /row
-    // End Purchase Block
-    // === Content Part ===
-    .container
-      // Service Blocks
-      .row.margin-bottom-10
-        .col-md-4.service-alternative
-          .service
-            i.icon-resize-small.service-icon
-            .desc
-              h4 Fully Responsive
-              p
-                | Donec id elit non mi porta gravida at eget metus&period; Fusce dapibus&comma; tellus ac cursus commodo&comma; tortor mauris condimentum nibh&comma; ut fermentum massa justo sit amet risus etiam sem&period;&period;&period;
-        .col-md-4.service-alternative
-          .service
-            i.icon-cogs.service-icon
-            .desc
-              h4 HTML5 &plus; CSS3
-              p
-                | Donec id elit non mi porta gravida at eget metus&period; Fusce dapibus&comma; tellus ac cursus commodo&comma; tortor mauris condimentum nibh&comma; ut fermentum massa justo sit amet risus etiam sem&period;&period;&period;
-        .col-md-4.service-alternative
-          .service
-            i.icon-plane.service-icon
-            .desc
-              h4 Launch Ready
-              p
-                | Donec id elit non mi porta gravida at eget metus&period; Fusce dapibus&comma; tellus ac cursus commodo&comma; tortor mauris condimentum nibh&comma; ut fermentum massa justo sit amet risus etiam sem&period;&period;&period;
-      // /row
-      // End Service Blokcs
-      // Recent Works
-      .row.margin-bottom-40
-        .col-lg-12
-          .headline
-            h2 Recent Works
-          ul.bxslider.recent-work
-            li
-              a(href='#')
-                em.overflow-hidden
-                  img(src='/img/main/1.jpg', alt='')
-                span
-                  strong Happy New Year
-                  i Anim pariatur cliche reprehenderit
-            li
-              a(href='#')
-                em.overflow-hidden
-                  img(src='/img/main/2.jpg', alt='')
-                span
-                  strong Award Winning Agency
-                  i Responsive Bootstrap Template
-            li
-              a(href='#')
-                em.overflow-hidden
-                  img(src='/img/main/3.jpg', alt='')
-                span
-                  strong Wolf Moon Officia
-                  i Pariatur prehe cliche reprehrit
-            li
-              a(href='#')
-                em.overflow-hidden
-                  img(src='/img/main/4.jpg', alt='')
-                span
-                  strong Food Truck Quinoa Nesciunt
-                  i Craft labore wes anderson cred
-            li
-              a(href='#')
-                em.overflow-hidden
-                  img(src='/img/main/5.jpg', alt='')
-                span
-                  strong Happy New Year
-                  i Anim pariatur cliche reprehenderit
-            li
-              a(href='#')
-                em.overflow-hidden
-                  img(src='/img/main/6.jpg', alt='')
-                span
-                  strong Award Winning Agency
-                  i Responsive Bootstrap Template
-            li
-              a(href='#')
-                em.overflow-hidden
-                  img(src='/img/main/7.jpg', alt='')
-                span
-                  strong Wolf Moon Officia
-                  i Pariatur prehe cliche reprehrit
-            li
-              a(href='#')
-                em.overflow-hidden
-                  img(src='/img/main/8.jpg', alt='')
-                span
-                  strong Food Truck Quinoa Nesciunt
-                  i Craft labore wes anderson cred
-      // /row
-      // End Recent Works
-      // Info Blokcs
-      .row.margin-bottom-10
-        // Welcome Block
-        .col-md-8
-          .headline
-            h2 Welcome To Unify
-          .row
-            .col-sm-4
-              img.img-responsive.margin-bottom-20(src='/img/new/img15.jpg', alt='')
-            .col-sm-8
-              p
-                | Unify is an incredibly beautiful responsive Bootstrap Template for corporate and creative professionals&period; It works on all major web browsers&comma; tablets and phone&period;
-              ul.list-unstyled.margin-bottom-20
-                li
-                  i.icon-ok.color-green
-                  | Donec id elit non mi porta gravida
-                li
-                  i.icon-ok.color-green
-                  | Corporate and Creative
-                li
-                  i.icon-ok.color-green
-                  | Responsive Bootstrap Template
-                li
-                  i.icon-ok.color-green
-                  | Corporate and Creative
-          blockquote.hero-unify
-            p
-              | Award winning digital agency&period; We bring a personal and effective approach to every project we work on&comma; which is why&period; Unify is an incredibly beautiful responsive Bootstrap Template for corporate professionals&period;
-            small CEO&comma; Jack Bour
-        // /col-md-8
-        // Latest Shots
-        .col-md-4
-          .headline
-            h2 Latest Shots
-          #myCarousel.carousel.slide.carousel-v1
-            .carousel-inner
-              .item.active
-                img(src='/img/main/5.jpg', alt='')
-                .carousel-caption
-                  p Facilisis odio&comma; dapibus ac justo acilisis gestinas&period;
-              .item
-                img(src='/img/main/4.jpg', alt='')
-                .carousel-caption
-                  p Cras justo odio&comma; dapibus ac facilisis into egestas&period;
-              .item
-                img(src='/img/main/3.jpg', alt='')
-                .carousel-caption
-                  p Justo cras odio apibus ac afilisis lingestas de&period;
-            .carousel-arrow
-              a.left.carousel-control(href='#myCarousel', data-slide='prev')
-                i.icon-angle-left
-              a.right.carousel-control(href='#myCarousel', data-slide='next')
-                i.icon-angle-right
-        // /col-md-4
-      // /row
-      // End Info Blokcs
-      // Our Clients
-      #clients-flexslider.flexslider.home.clients
-        .headline
-          h2 Our Clients
-        ul.slides
-          li
-            a(href='#')
-              img(src='/img/clients/hp_grey.png', alt='')
-              img.color-img(src='/img/clients/hp.png', alt='')
-          li
-            a(href='#')
-              img(src='/img/clients/igneus_grey.png', alt='')
-              img.color-img(src='/img/clients/igneus.png', alt='')
-          li
-            a(href='#')
-              img(src='/img/clients/vadafone_grey.png', alt='')
-              img.color-img(src='/img/clients/vadafone.png', alt='')
-          li
-            a(href='#')
-              img(src='/img/clients/walmart_grey.png', alt='')
-              img.color-img(src='/img/clients/walmart.png', alt='')
-          li
-            a(href='#')
-              img(src='/img/clients/shell_grey.png', alt='')
-              img.color-img(src='/img/clients/shell.png', alt='')
-          li
-            a(href='#')
-              img(src='/img/clients/natural_grey.png', alt='')
-              img.color-img(src='/img/clients/natural.png', alt='')
-          li
-            a(href='#')
-              img(src='/img/clients/aztec_grey.png', alt='')
-              img.color-img(src='/img/clients/aztec.png', alt='')
-          li
-            a(href='#')
-              img(src='/img/clients/gamescast_grey.png', alt='')
-              img.color-img(src='/img/clients/gamescast.png', alt='')
-          li
-            a(href='#')
-              img(src='/img/clients/cisco_grey.png', alt='')
-              img.color-img(src='/img/clients/cisco.png', alt='')
-          li
-            a(href='#')
-              img(src='/img/clients/everyday_grey.png', alt='')
-              img.color-img(src='/img/clients/everyday.png', alt='')
-          li
-            a(href='#')
-              img(src='/img/clients/cocacola_grey.png', alt='')
-              img.color-img(src='/img/clients/cocacola.png', alt='')
-          li
-            a(href='#')
-              img(src='/img/clients/spinworkx_grey.png', alt='')
-              img.color-img(src='/img/clients/spinworkx.png', alt='')
-          li
-            a(href='#')
-              img(src='/img/clients/shell_grey.png', alt='')
-              img.color-img(src='/img/clients/shell.png', alt='')
-          li
-            a(href='#')
-              img(src='/img/clients/natural_grey.png', alt='')
-              img.color-img(src='/img/clients/natural.png', alt='')
-          li
-            a(href='#')
-              img(src='/img/clients/gamescast_grey.png', alt='')
-              img.color-img(src='/img/clients/gamescast.png', alt='')
-          li
-            a(href='#')
-              img(src='/img/clients/everyday_grey.png', alt='')
-              img.color-img(src='/img/clients/everyday.png', alt='')
-          li
-            a(href='#')
-              img(src='/img/clients/spinworkx_grey.png', alt='')
-              img.color-img(src='/img/clients/spinworkx.png', alt='')
-      // /flexslider
-      // End Our Clients
-    // /container
-    // End Content Part
-    // === Footer ===
-    .footer
-      .container
-        .row
-          .col-md-4.md-margin-bottom-40
-            // About
-            .headline
-              h2 About
-            p.margin-bottom-25.md-margin-bottom-40
-              | Unify is an incredibly beautiful responsive Bootstrap Template for corporate and creative professionals&period;
-            // Monthly Newsletter
-            .headline
-              h2 Monthly Newsletter
-            p Subscribe to our newsletter and stay up to date with the latest news and deals&excl;
-            form.footer-subsribe
-              .input-group
-                input.form-control(type='text', placeholder='Email Address')
-                span.input-group-btn
-                  button.btn-u(type='button') Subscribe
-              // /input-group
-          // /col-md-4
-          .col-md-4.md-margin-bottom-40
-            .posts
-              .headline
-                h2 Recent Blog Entries
-              dl.dl-horizontal
-                dt
-                  a(href='#')
-                    img(src='/img/sliders/elastislide/6.jpg', alt='')
-                dd
-                  p
-                    a(href='#') Anim moon officia Unify is an incredibly beautiful responsive Bootstrap Template
-              dl.dl-horizontal
-                dt
-                  a(href='#')
-                    img(src='/img/sliders/elastislide/10.jpg', alt='')
-                dd
-                  p
-                    a(href='#') Anim moon officia Unify is an incredibly beautiful responsive Bootstrap Template
-              dl.dl-horizontal
-                dt
-                  a(href='#')
-                    img(src='/img/sliders/elastislide/11.jpg', alt='')
-                dd
-                  p
-                    a(href='#') Anim moon officia Unify is an incredibly beautiful responsive Bootstrap Template
-          // /col-md-4
-          .col-md-4
-            // Monthly Newsletter
-            .headline
-              h2 Contact Us
-            address.md-margin-bottom-40
-              | 25&comma; Lorem Lis Street&comma; Orange
-              br
-              | California&comma; US
-              br
-              | Phone&colon; 800 123 3456
-              br
-              | Fax&colon; 800 123 3456
-              br
-              | Email&colon;
-              a(href='mailto:info@anybiz.com') info&commat;anybiz&period;com
-            // Stay Connected
-            .headline
-              h2 Stay Connected
-            ul.social-icons
-              li
-                a.social_rss(href='#', data-original-title='Feed')
-              li
-                a.social_facebook(href='#', data-original-title='Facebook')
-              li
-                a.social_twitter(href='#', data-original-title='Twitter')
-              li
-                a.social_googleplus(href='#', data-original-title='Goole Plus')
-              li
-                a.social_pintrest(href='#', data-original-title='Pinterest')
-              li
-                a.social_linkedin(href='#', data-original-title='Linkedin')
-              li
-                a.social_vimeo(href='#', data-original-title='Vimeo')
-          // /col-md-4
-        // /row
-      // /container
-    // /footer
-    // === End Footer ===
-    // === Copyright ===
-    .copyright
-      .container
-        .row
-          .col-md-6
-            p.copyright-space
-              | 2013 &copy; Unify&period; ALL Rights Reserved&period;
-              a(href='#') Privacy Policy
-              | &VerticalLine;
-              a(href='#') Terms of Service
-          .col-md-6
-            a(href='index.html')
-              img#logo-footer.pull-right(src='/img/logo2-default.png', alt='')
-        // /row
-      // /container
-    // /copyright
-    // === End Copyright ===
-    // JS Global Compulsory
-    script(type='text/javascript', src='/plugins/jquery-1.10.2.min.js')
-    script(type='text/javascript', src='/plugins/jquery-migrate-1.2.1.min.js')
-    script(type='text/javascript', src='/plugins/bootstrap/js/bootstrap.min.js')
-    script(type='text/javascript', src='/plugins/hover-dropdown.min.js')
-    script(type='text/javascript', src='/plugins/back-to-top.js')
-    // JS Implementing Plugins
-    script(type='text/javascript', src='/plugins/flexslider/jquery.flexslider-min.js')
-    script(type='text/javascript', src='/plugins/bxslider/jquery.bxslider.js')
-    // Layer Slider
-    script(src='/plugins/layer_slider/jQuery/jquery-easing-1.3.js', type='text/javascript')
-    script(src='/plugins/layer_slider/jQuery/jquery-transit-modified.js', type='text/javascript')
-    script(src='/plugins/layer_slider/js/layerslider.transitions.js', type='text/javascript')
-    script(src='/plugins/layer_slider/js/layerslider.kreaturamedia.jquery.js', type='text/javascript')
-    // End Layer Slider
-    // JS Page Level
-    script(src='/js/app.js')
-    script(src='/js/pages/index.js')
-    script(src="/js/init.js")
-    //if lt IE 9
-      script(src='/plugins/respond.js')
-      script(src='/plugins/layer_slider//js/html5.js')
+extends layouts/master
+block content
+	//encima del menu
+	.top
+		.container
+			ul.loginbar(class="pull-right")
+				li
+					a(href="page_faq.html")|Help
+				li.devider
+				li
+					a(href="page_login.html")|Register
+				li.devider
+				li
+					a(href="page_login.html")|Login
+	.header
+		.navbar(class="navbar-default",role='navigation')
+			.container
+				.navbar-header
+					button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-responsive-collapse')
+						span.sr-only| Toggle navigation
+						span.icon-bar
+						span.icon-bar
+						span.icon-bar
+					a.navbar-brand(href='index.html')
+						h1
+							i.fa(class="fa-penci-square")
+							|Sensei
+				.collapse(class="navbar-collapse navbar-responsive-collapse")
+					ul.nav(class="navbar-nav navbar-right")
+						li.dropdown.active
+							a.dropdown-toggle(href='#', data-toggle='dropdown', data-hover='dropdown', data-delay='0', data-close-others='false')
+								|Home
+						li.dropdown
+							a.dropdown-toggle(href='#', data-toggle='dropdown', data-hover='dropdown', data-delay='0', data-close-others='false')
+								|Pages
+						li.dropdown
+							a.dropdown-toggle(href='#', data-toggle='dropdown', data-hover='dropdown', data-delay='0', data-close-others='false')
+								|Features
+						li.dropdown
+							a.dropdown-toggle(href='#', data-toggle='dropdown', data-hover='dropdown', data-delay='0', data-close-others='false')
+								|Portfolio
+						li.dropdown
+							a.dropdown-toggle(href='#', data-toggle='dropdown', data-hover='dropdown', data-delay='0', data-close-others='false')
+								|Blog
+						li.dropdown
+							a.dropdown-toggle(href='#', data-toggle='dropdown', data-hover='dropdown', data-delay='0', data-close-others='false')
+								|Contacts
+						li.hidden-sm
+							a.search
+								i.icon-search(class="search-btn")
+						.search-open
+							.input-group
+								input.form-control(type='text', placeholder='Search')
+								span.input-group-btn
+									button.btn-u(type='button') Go
+	//sliders								
+	.layer_slider(style="z-index:1;")
+		#layerslider-container-fw
+			#layerslider(style="width: 100%; height: 580px; margin: 0px auto;")
+				.search(style="position:absolute;width:40%;height:auto;margin:20% 0 0 10%;z-index:1000;")
+					.input-group.input-lg
+						input.form-control(type='text',style="height:40px;font-size:1.5em;", placeholder='Busca el curso o tema')
+						span.input-group-btn
+							button.btn-u.btn-lg(type='button',style="height:40px;width:40px;margin:0 0 0 -40px")
+								i.icon-search(style="font-size:1.5em;")
+				.ls-layer(style="slidedirection: right; transition2d: 24,25,27,28;")
+					img.ls-bg(src="/img/sliders/layer/bg1.jpg",alt="Slide background")
+					//img.ls-s-1(src="/img/mockup/iphone1.png", alt="Slider Image", style=" top:110px; left: 240px; slidedirection : left; slideoutdirection : bottom; durationin : 1500; durationout : 1500; ")
+					//img.ls-s-1(src="/img/mockup/iphone.png", alt="Slider image", style=" top:60px; left: 40px; slidedirection : left; slideoutdirection : bottom; durationin : 2500; durationout : 2500; ")
+					span.ls-s-1(style=" text-transform: uppercase; line-height: 45px; font-size:35px; color:#fff; top:200px; left: 590px; slidedirection : top; slideoutdirection : bototm; durationin : 3500; durationout : 3500;")
+						|fully Responsive
+						br
+						|Mensaje
+					a.btn-u(class="btn-u-orange ls-s1", href="#", style=" padding: 9px 20px; font-size:25px; top:340px; left: 590px; slidedirection : bottom; slideoutdirection : top; durationin : 3500; durationout : 3500;")
+						|Download
+				.ls-layer(style="slidedirection: top;")
+					img.ls.bg(src="/img/bg/5.jpg",alt="Slide background")
+					i.icon-chevron-sign-right.ls-s-1(style=" color: #fff; font-size: 24px; top:70px; left: 40px; slidedirection : left; slideoutdirection : top; durationin : 1500; durationout : 500;")
+					span.ls-s-2(style=" color: #fff; font-weight: 200; font-size: 22px; top:70px; left: 70px; slidedirection : top; slideoutdirection : bottom; durationin : 1500; durationout : 500; ")
+						|Fully Responsive and Easy to Customize
+					i.icon-chevron.icon-chevron-sign-right.ls-s-1(style=" color: #fff; font-size: 24px; top:120px; left: 40px; slidedirection : left; slideoutdirection : top; durationin : 2500; durationout : 1500;")
+					span.ls-s-2(style="color: #000; font-weight: 200; font-size: 22px; top:120px; left: 70px; slidedirection : top; slideoutdirection : bottom; durationin : 2500; durationout : 1500;")
+						|Revolution and Layer Slider Included
+					i.icon-chevron-sign-right.ls-s-1(style="color: #fff; font-size: 24px; top:170px; left: 40px; slidedirection : left; slideoutdirection : top; durationin : 3500; durationout : 3500;")
+					span.ls-s-2(style="color: #000; font-weight: 200; font-size: 22px; top:170px; left: 70px; slidedirection : top; slideoutdirection : bottom; durationin : 3500; durationout : 2500;")
+						|1000+ Glyphicons Pro and Font Awesome Icons
+					i.icon-chevron-sign-right.ls-s-1(style="color: #fff; font-size: 24px; top:220px; left: 40px; slidedirection : left; slideoutdirection : top; durationin : 4500; durationout : 3500;")
+					span.ls-s-2(style="color: #000; font-weight: 200; font-size: 22px; top:220px; left: 70px; slidedirection : top; slideoutdirection : bottom; durationin : 4500; durationout : 3500;")
+						|Revolution and Layer Slider Included
+					i.icon-chevron-sign-right.ls-s-1(style=" color: #fff; font-size: 24px; top:370px; left: 40px; slidedirection : left; slideoutdirection : top; durationin : 5500; durationout : 4500; ")
+					span.ls-s-2(style="color: #000; font-weight: 200; font-size: 22px; top:370px; left: 70px; slidedirection : top; slideoutdirection : bottom; durationin : 5500; durationout : 4500;")
+						|60+ Template Pages and 20+ Plugins Included
+					a.btn.btn-u.ls-s-1(href="#",style="padding: 9px 20px; font-size:25px; top:420px; left: 40px; slidedirection : bottom; slideoutdirection : bottom; durationin : 6500; durationout : 3500;")
+						|Twitter Bootstrap 3
+					img(src="/img/mockup/iphone1.png", alt="Slider Image", class="ls-s-1", style=" top:30px; left: 650px; slidedirection : right; slideoutdirection : bottom; durationin : 1500; durationout : 1500;")
+				.ls-layer(style="slidedirection: right; transition2d: 92,93,105;")
+					img.ls-bg(src="/img/sliders/layer/bg2.jpg",alt="Slide background")
+					span.ls-s-1(style="color: #777; line-height:45px; font-weight: 200; font-size: 35px; top:100px; left: 50px; slidedirection : top; slideoutdirection : bottom; durationin : 1000; durationout : 1000;")
+						| Unify is Fully Responsive <br> Twitter Bootstrap 3 Template
+					a.btn-u.btn-u-green.ls-s-1(href="#",style="padding: 9px 20px; font-size:25px; top:220px; left: 50px; slidedirection : bottom; slideoutdirection : bottom; durationin : 1000; durationout : 1000;")
+						|	Find Out More
+					img.ls-s-1(src="/img/mockup/iphone.png", alt="Slider Image", style=" top:30px; left: 670px; slidedirection : right; slideoutdirection : bottom; durationin : 3000; durationout : 3000; ")
+	//contenido medio					
+	.purchase
+		.container
+			.row
+				.col-md-9
+					span|Unify is a clean and fully responsive incredible Template.
+					p|At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi  vehicula sem ut volutpat. Ut non libero magna fusce condimentum eleifend enim a feugiat.
+				.col-md-3
+					a.btn-buy.hover-effect(href="#")|Purchase Now
+	//footer-bajo
+	.copyright
+		.container
+			.row
+				.col-md-6
+					p.copyright-space
+						|2013 &copy;Sensei. Todos los derechos reservados.
+						a(href="#")|Privacy Policy  
+						| |
+						a(ref="#")|Terminos de servicio
+				.col-md-6
+					a(href="#")
+						//<img id="logo-footer" src="/img/logo2-default.png" class="pull-right" alt="" />
+						h3.pull-right#logo-footer <i class="fa fa-penci-square"></i>Sensei
+block import_sub
