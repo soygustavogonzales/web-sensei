@@ -1,18 +1,13 @@
 doctype html
-<!--[if IE 8]><html lang="en" class="ie8"> <![endif]-->
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
-<!--[if !IE]><!-->
-<html lang="en">
-<!--<![endif]--> 
+block ie_conditionals
+html(lang="es-PE",ng-app="#{app}")
 head
 	title|Sensei
 	meta(charset="utf-8")
-	meta(name='viewport', content='width=device-width, initial-scale=1.0')
-	meta(name='description',content='')
-	meta(name='author',content='')
-	include ../includes/links/home
-	body
-		block content
-		block import
-			include ../includes/scripts/home.jade
-			block import_sub
+	meta(name="viewport", content="width=device-width, initial-scale=1.0")
+	meta(name="description",content="Sensei web aplication")
+	meta(name="author",content="Sensei")
+	block import_links
+body
+	block content
+	block import_scripts

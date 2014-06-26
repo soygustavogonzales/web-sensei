@@ -28,7 +28,7 @@ app.configure(function(){
 	app.get('/',function(req,res){
 			//res.sendfile(__dirname+'/views/index_.html');
 			//console.log(__dirname)
-			res.render('index.jade')
+			res.render('index.jade',{app:"myApp"})
 	})
 	app.get('/index2',function(req,res){
 			res.sendfile(__dirname+'/views/index_.html');

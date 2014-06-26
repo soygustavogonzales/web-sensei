@@ -1,4 +1,4 @@
-extends layouts/master
+extends layouts/home_layout
 block content
 	//encima del menu
 	.top
@@ -57,9 +57,9 @@ block content
 	.layer_slider(style="z-index:1;")
 		#layerslider-container-fw
 			#layerslider(style="width: 100%; height: 580px; margin: 0px auto;")
-				.search(style="position:absolute;width:40%;height:auto;margin:20% 0 0 10%;z-index:1000;")
+				.search(ng-controller="ctrlSearch",style="position:absolute;width:40%;height:auto;margin:20% 0 0 10%;z-index:1000;")
 					.input-group.input-lg
-						input.form-control(type='text',style="height:40px;font-size:1.5em;", placeholder='Busca el curso o tema')
+						input.form-control(ng-model="search",type='text',style="height:40px;font-size:1.5em;", placeholder='Busca el curso o tema')
 						span.input-group-btn
 							button.btn-u.btn-lg(type='button',style="height:40px;width:40px;margin:0 0 0 -40px")
 								i.icon-search(style="font-size:1.5em;")
@@ -101,14 +101,87 @@ block content
 						|	Find Out More
 					img.ls-s-1(src="/img/mockup/iphone.png", alt="Slider Image", style=" top:30px; left: 670px; slidedirection : right; slideoutdirection : bottom; durationin : 3000; durationout : 3000; ")
 	//contenido medio					
-	.purchase
-		.container
-			.row
-				.col-md-9
-					span|Unify is a clean and fully responsive incredible Template.
-					p|At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi  vehicula sem ut volutpat. Ut non libero magna fusce condimentum eleifend enim a feugiat.
-				.col-md-3
-					a.btn-buy.hover-effect(href="#")|Purchase Now
+	.container
+		.row
+			h4.title
+				.margin-bottom-10
+					|Mira como otros ya estan aprendiendo!!
+			hr
+		.row.servive-block.margin-bottom-10
+			.col-md-3.col-sm-3
+				.servive-block-in.servive-block-colored.servive-block-green
+					h4|Awesome Green Box
+					div
+						i.icon-bullhorn
+					p|Donec id elit non mi porta gravida at eget metus id elit mi egetine.
+			.col-md-3.col-sm-3
+				.servive-block-in.servive-block-colored.servive-block-green
+					h4|Awesome Green Box
+					div
+						i.icon-bullhorn
+					p|Donec id elit non mi porta gravida at eget metus id elit mi egetine.
+			.col-md-3.col-sm-3
+				.servive-block-in.servive-block-colored.servive-block-green
+					h4|Awesome Green Box
+					div
+						i.icon-bullhorn
+					p|Donec id elit non mi porta gravida at eget metus id elit mi egetine.
+			.col-md-3.col-sm-3
+				.servive-block-in.servive-block-colored.servive-block-green
+					h4|Awesome Green Box
+					div
+						i.icon-bullhorn
+					p|Donec id elit non mi porta gravida at eget metus id elit mi egetine.
+		.row.servive-block.margin-bottom-10
+			.col-md-3.col-sm-6
+				.servive-block-in.servive-block-colored.servive-block-green
+					h4|Awesome Green Box
+					div
+						i.icon-bullhorn
+					p|Donec id elit non mi porta gravida at eget metus id elit mi egetine.
+			.col-md-3.col-sm-6
+				.servive-block-in.servive-block-colored.servive-block-green
+					h4|Awesome Green Box
+					div
+						i.icon-bullhorn
+					p|Donec id elit non mi porta gravida at eget metus id elit mi egetine.
+			.col-md-3.col-sm-6
+				.servive-block-in.servive-block-colored.servive-block-green
+					h4|Awesome Green Box
+					div
+						i.icon-bullhorn
+					p|Donec id elit non mi porta gravida at eget metus id elit mi egetine.
+			.col-md-3.col-sm-6
+				.servive-block-in.servive-block-colored.servive-block-green
+					h4|Awesome Green Box
+					div
+						i.icon-bullhorn
+					p|Donec id elit non mi porta gravida at eget metus id elit mi egetine.
+		.row.servive-block.margin-bottom-10
+			.col-md-3.col-sm-6
+				.servive-block-in.servive-block-colored.servive-block-green
+					h4|Awesome Green Box
+					div
+						i.icon-bullhorn
+					p|Donec id elit non mi porta gravida at eget metus id elit mi egetine.
+			.col-md-3.col-sm-6
+				.servive-block-in.servive-block-colored.servive-block-green
+					h4|Awesome Green Box
+					div
+						i.icon-bullhorn
+					p|Donec id elit non mi porta gravida at eget metus id elit mi egetine.
+			.col-md-3.col-sm-6
+				.servive-block-in.servive-block-colored.servive-block-green
+					h4|Awesome Green Box
+					div
+						i.icon-bullhorn
+					p|Donec id elit non mi porta gravida at eget metus id elit mi egetine.
+			.col-md-3.col-sm-6
+				.servive-block-in.servive-block-colored.servive-block-green
+					h4|Awesome Green Box
+					div
+						i.icon-bullhorn
+					p|Donec id elit non mi porta gravida at eget metus id elit mi egetine.
 	//footer-bajo
 	.copyright
 		.container
@@ -123,4 +196,3 @@ block content
 					a(href="#")
 						//<img id="logo-footer" src="/img/logo2-default.png" class="pull-right" alt="" />
 						h3.pull-right#logo-footer <i class="fa fa-penci-square"></i>Sensei
-block import_sub
