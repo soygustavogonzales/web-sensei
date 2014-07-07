@@ -35,6 +35,9 @@ app.configure(function(){
 			//console.log(__dirname)
 			//res.render('index_.jade')
 	})
+	app.get('*',function(req,res){
+		res.sendfile(__dirname+"/views/page_404_error1.html");
+	});
 server.listen(app.get('port'),function(){
 	l("Server runing in port: "+app.get('port'));
 })

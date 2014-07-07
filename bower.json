@@ -10,8 +10,10 @@
     "angular-route":"latest",
     "angular-animate":"latest",
     "jquery":"latest",
+    "jquery-ui":"latest",
     "flatstrap":"latest",
-    "animatescroll":"latest"
+    "animatescroll":"latest",
+    "fullpage":"https://github.com/alvarotrigo/fullPage.js.git"
     },
   "description": "sensei web",
   "keywords": [
