@@ -22,8 +22,9 @@ gulp.task('less', function () {
 });
 /*Tarea para minimizar un archivo de estilos .css*/
 gulp.task('css-minify', function() {
-    return gulp.src('site/public/stylesheets/css/development/**/*.css')
+  gulp.src('site/public/stylesheets/css/development/**/*.css')
         .pipe(csso())
+        .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('site/public/stylesheets/css/production'))
         .pipe(connect.reload());
 });

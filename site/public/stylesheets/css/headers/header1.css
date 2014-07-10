@@ -19,7 +19,7 @@
 
 .top ul.loginbar > li > a, 
 .top ul.loginbar > li > a:hover {
-	color: #7c8082;
+	color: white;
 	font-size: 11px;
 	text-transform: uppercase;
 	font-family: 'Open Sans', sans-serif;
@@ -128,7 +128,7 @@
 
 /*Navbar*/
 .header .navbar-default .navbar-nav > li > a {
-	color: #687074;
+	color: white;
 	font-size: 15px;
 	font-weight:400;
 	padding: 9px 20px;
@@ -136,7 +136,7 @@
 }
 
 .header .navbar-default .navbar-nav > .active > a {
-	color: #72c02c;
+	color: white;
 }
 
 /*Dropdown*/
@@ -235,7 +235,7 @@
 
 	.header .navbar-default .navbar-nav > li > a:hover,
 	.header .navbar-default .navbar-nav > .active > a {
-		border-bottom: solid 2px #72c02c;
+		border-bottom: solid 2px #aaaaaa;
 	}
 
 	.header .navbar-default .navbar-nav > li > a,
@@ -250,7 +250,7 @@
 	.header .navbar-default .navbar-nav > .open > a,
 	.header .navbar-default .navbar-nav > .open > a:hover,
 	.header .navbar-default .navbar-nav > .open > a:focus {
-		color: #72c02c;
+		color: #aaaaaa;
 	}
 
 	/*Dropdown Menu*/

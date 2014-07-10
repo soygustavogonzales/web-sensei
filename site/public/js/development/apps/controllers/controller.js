@@ -8,7 +8,10 @@ myApp.controller('ctrlSlidesZone', ['$scope', function ($scope) {
 
 			$('#fullpage').fullpage({
 				anchors: ['1'],
-				scrollingSpeed: 2000
+				scrollingSpeed: 1000,
+				autoScrolling:true,
+				resize:false,
+				navigation:false
 			});
 	
 }])
