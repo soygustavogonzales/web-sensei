@@ -149,124 +149,27 @@ block content
 										button.btn-u(type="submit")|Registrarme ya!!
 		//contenido medio					
 		.section#section1
-			.slide
+			.slide(ng-controller="ctrlContentVideos")
 				.container
 					.row
-						h4.title.text-center|Mira como ellos ya estan aprendiendo!!
+						h3.title.text-center|Mira como ellos ya estan aprendiendo!!
 						hr
+						button(ng-click="showVideos()")|show
+						button(ng-click="hideVideos()")|hide
 					.row.servive-block
-						.col-xs-6.col-md-3.col-sm-6
-							.servive-block-in.servive-block-colored.servive-block-green
-								h4|Awesome Green Box
-								div
-									i.icon-bullhorn
-								p|Donec id elit non mi porta gravida
-						.col-xs-6.col-md-3.col-sm-6
-							.servive-block-in.servive-block-colored.servive-block-green
-								h4|Awesome Green Box
-								div
-									i.icon-bullhorn
-								p|Donec id elit non mi porta gravida
-						.col-xs-6.col-md-3.col-sm-6
-							.servive-block-in.servive-block-colored.servive-block-green
-								h4|Awesome Green Box
-								div
-									i.icon-bullhorn
-								p|Donec id elit non mi porta gravida
-						.col-xs-6.col-md-3.col-sm-6
-							.servive-block-in.servive-block-colored.servive-block-green
-								h4|Awesome Green Box
-								div
-									i.icon-bullhorn
-								p|Donec id elit non mi porta gravida
-					.row.servive-block
-						.col-xs-6.col-md-3.col-sm-6
-							.servive-block-in.servive-block-colored.servive-block-green
-								h4|Awesome Green Box
-								div
-									i.icon-bullhorn
-								p|Donec id elit non mi porta gravida
-						.col-xs-6.col-md-3.col-sm-6
-							.servive-block-in.servive-block-colored.servive-block-green
-								h4|Awesome Green Box
-								div
-									i.icon-bullhorn
-								p|Donec id elit non mi porta gravida
-						.col-xs-6.col-md-3.col-sm-6
-							.servive-block-in.servive-block-colored.servive-block-green
-								h4|Awesome Green Box
-								div
-									i.icon-bullhorn
-								p|Donec id elit non mi porta gravida
-						.col-xs-6.col-md-3.col-sm-6
-							.servive-block-in.servive-block-colored.servive-block-green
-								h4|Awesome Green Box
-								div
-									i.icon-bullhorn
-								p|Donec id elit non mi porta gravida
-					.row.servive-block
-						.col-xs-6.col-md-3.col-sm-6
-							.servive-block-in.servive-block-colored.servive-block-green
-								h4|Awesome Green Box
-								div
-									i.icon-bullhorn
-								p|Donec id elit non mi porta gravida
-						.col-xs-6.col-md-3.col-sm-6
-							.servive-block-in.servive-block-colored.servive-block-green
-								h4|Awesome Green Box
-								div
-									i.icon-bullhorn
-								p|Donec id elit non mi porta gravida
-						.col-xs-6.col-md-3.col-sm-6
-							.servive-block-in.servive-block-colored.servive-block-green
-								h4|Awesome Green Box
-								div
-									i.icon-bullhorn
-								p|Donec id elit non mi porta gravida
-						.col-xs-6.col-md-3.col-sm-6
-							.servive-block-in.servive-block-colored.servive-block-green
-								h4|Awesome Green Box
-								div
-									i.icon-bullhorn
-								p|Donec id elit non mi porta gravida
-			.slide
+						.boxes.col-xs-6.col-md-3.col-sm-6(ng-repeat="(key, val) in listVideos")
+							.boxV.servive-block-in.servive-block-colored.servive-block-green
+									img(src="{{val.urlImage}}", alt="")
+									i.glyphicon.glyphicon-play
+			.slide(ng-controller="ctrlContentProfesores")
 				.container
 					.row
-						h4.title.text-center|Encontramos estos profesores para ti!!
+						h3.title.text-center|Encontramos estos profesores para ti!!
 						hr
+						button(ng-click="showTeachers()")|show
+						button(ng-click="hideTeachers()")|hide
 					.row.servive-block
-						.col-md-6.col-sm-6
-							.servive-block-in.servive-block-colored.servive-block-blue
-								h4|Awesome Green Box
-								div
-									i.icon-bullhorn
-								p|Donec id elit non mi porta gravida
-						.col-md-6.col-sm-6
-							.servive-block-in.servive-block-colored.servive-block-blue
-								h4|Awesome Green Box
-								div
-									i.icon-bullhorn
-								p|Donec id elit non mi porta gravida
-						.col-md-6.col-sm-6
-							.servive-block-in.servive-block-colored.servive-block-blue
-								h4|Awesome Green Box
-								div
-									i.icon-bullhorn
-								p|Donec id elit non mi porta gravida
-						.col-md-6.col-sm-6
-							.servive-block-in.servive-block-colored.servive-block-blue
-								h4|Awesome Green Box
-								div
-									i.icon-bullhorn
-								p|Donec id elit non mi porta gravida
-					.row.servive-block
-						.col-md-6.col-sm-6
-							.servive-block-in.servive-block-colored.servive-block-blue
-								h4|Awesome Green Box
-								div
-									i.icon-bullhorn
-								p|Donec id elit non mi porta gravida
-						.col-md-6.col-sm-6
+						.boxes.col-md-6.col-sm-6(ng-repeat="(key, val) in listTeachers")
 							.servive-block-in.servive-block-colored.servive-block-blue
 								h4|Awesome Green Box
 								div

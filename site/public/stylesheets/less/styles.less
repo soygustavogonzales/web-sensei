@@ -47,7 +47,77 @@ body{
 							.title{
 									margin-top:-4em;
 							}
-						}
+							.boxes{
+								
+									&:hover{
+										cursor: pointer;
+									}
+									&.ng-enter{
+										-webkit-transition: all 1s ease;
+										   -moz-transition: all 1s ease;
+										    -ms-transition: all 1s ease;
+										     -o-transition: all 1s ease;
+										        transition: all 1s ease;
+										opacity: 0;
+									}
+									&.ng-enter-active{
+										opacity: 1;
+									}
+									&.ng-enter-stagger{
+										transition-delay: 1s;
+									}
+									&.ng-leave{
+										-webkit-transition: all 1s ease;
+										   -moz-transition: all 1s ease;
+										    -ms-transition: all 1s ease;
+										     -o-transition: all 1s ease;
+										        transition: all 1s ease;
+										opacity: 1;
+									}
+									&.ng-leave-stagger{
+										transition-delay: 1s;
+									}
+									&.ng-leave-active{
+										opacity: 0;
+									}
+
+							.boxV{
+								padding: 0;
+								opacity: 1;
+									-webkit-transition: all 5s ease;
+						   -moz-transition: all 5s ease;
+						    -ms-transition: all 5s ease;
+						     -o-transition: all 5s ease;
+						        transition: all 5s ease;
+								img{
+									width: 100%;
+									height: 100%;
+									zoom:1.2;
+									&:hover{
+										zoom:1.2;
+									}
+								}
+								i{
+									position: absolute;
+									top:30%;
+									left: 45%;
+									//zoom: 1;
+									//font-size: 3em;
+									-webkit-transition: all .25s ease;
+							  -moz-transition: all .25s ease;
+								 -ms-transition: all .25s ease;
+							 	-o-transition: all .25s ease;
+							  transition: all .25s ease;
+									&:hover{
+										//zoom: 1.2;
+										font-size: 4.2rem;
+									}
+								}
+								/*
+								*/
+							}//.boxV
+						}//.boxVideo
+					}//.row
 						.row:nth-child(2){
 							margin-top: -12px;
 						}
@@ -55,8 +125,9 @@ body{
 							margin-top: -12px;
 						}
 					}
-				}
-			}
+				}//.slide
+
+			}//#section
 								
 					
 			#section2{

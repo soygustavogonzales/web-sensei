@@ -196,5 +196,7 @@ var App = function () {
       App.initSliders();
       App.initBxSlider();
       Index.initLayerSlider();
+
+
     });
 }()
