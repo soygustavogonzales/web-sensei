@@ -107,7 +107,7 @@ myApp.controller('ctrlSlidesZone', ['$scope','srvData', function ($scope,srvData
 		}
 			$('.btnRegister').click(function(event) {
 				event.preventDefault();
-					$.fn.fullpage.moveTo(2, 0);//seccion 1 , slide  de indice: 1
+					$.fn.fullpage.moveTo(1, 2);//seccion 1 , slide  de indice: 2
 			});
 
 }])
@@ -121,9 +121,8 @@ myApp.controller('ctrlSearch', ['$scope', function ($scope) {
 	var btnSearch = angular.element('.btnSearch');
 
 	btnSearch.click(function(e) {
-		console.log("click en search")
-		//$('.container-medium').animatescroll({scrollSpeed:2000})
-		
+		//Nos transportamos hacia donde se encuentran los profesores segun el math
+					$.fn.fullpage.moveTo(2, 1);//seccion 2 , slide  de indice: 1
 	});
 
 	var inputSearch = angular.element('.inputSearch')
@@ -131,8 +130,8 @@ myApp.controller('ctrlSearch', ['$scope', function ($scope) {
 	inputSearch.keypress(function(e) {
 
 		if(e.keyCode == 13){
-			console.log(true)
-			//$('.container-medium').animatescroll({scrollSpeed:2000})
+				//Nos transportamos hacia donde se encuentran los profesores segun el math
+					$.fn.fullpage.moveTo(2, 1);//seccion 2 , slide  de indice: 1
 		}
 
 	});

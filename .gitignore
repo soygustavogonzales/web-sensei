@@ -2,3 +2,9 @@ HTML/
 Documentation/
 node_modules/
 *.bak
+*.temp
+#no te metas con .gitignore, a este si hay que observarlo
+!.gitignore
+#cualquier archivo de cualquier extension(.*) cuyo nombre(antes del punto) que termine en "_" (*_), cualquier carpeta y subcarpeta en todo el repo.
+#Estos archivos son archivos separados del proyecto que hago para poner a prueba algunas funciones o estilos muy simples, y no hacer ramas de mas.
+*_.*
