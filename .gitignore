@@ -1,10 +1,23 @@
+#ARCHIVOS A LOS QUE NO SE LES DARA SEGUIMIENTO EN STAGE
+#------------------------------------------------------
+
+#1. carpetas de la plantilla
 HTML/
 Documentation/
+
+#2. carpetas de modulos instalables de nodejs
 node_modules/
+
+#3. carpetas generadas en debuggers
 *.bak
 *.temp
-#no te metas con .gitignore, a este si hay que observarlo
+
+#4. no te metas con .gitignore, a este si hay que observarlo
 !.gitignore
-#cualquier archivo de cualquier extension(.*) cuyo nombre(antes del punto) que termine en "_" (*_), cualquier carpeta y subcarpeta en todo el repo.
-#Estos archivos son archivos separados del proyecto que hago para poner a prueba algunas funciones o estilos muy simples, y no hacer ramas de mas.
+
+#5. cualquier archivo de cualquier extension(.*) cuyo nombre(antes del punto) que termine en "_" (*_), cualquier carpeta y subcarpeta en todo el repo.
+#	Estos archivos son archivos separados del proyecto que hago para poner a prueba algunas funciones o estilos muy simples, y no hacer ramas de mas.
 *_.*
+
+#6. En relacion a la regla nro.5: Pero a los que estan en /site/public/bower_components si dales seguimiento
+!site/public/bower_components/*_.*
