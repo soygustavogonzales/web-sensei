@@ -14,7 +14,7 @@ var gulp = require('gulp'),
 
 /*Tarea para precompilar un archivo .less en .css*/
 gulp.task('less', function () {
-  gulp.src('site/public/stylesheets/less/**/*.less')//ruta de los archivos .less que se quieren precompilar
+  gulp.src('site/public/stylesheets/less/*.less')//ruta de los archivos .less que se quieren precompilar
     .pipe(lessCss({
       paths: [ path.join(__dirname, 'less', 'includes') ]
     }))
@@ -72,7 +72,7 @@ gulp.task('default',function(){
 	//gulp.run('uncss')
 
 //Vigilancia de archivos, cuando ocurra un cambio en cualquiero de estos archivos se ejecutara la accion o tarea especificada
-	gulp.watch('site/public/stylesheets/less/**/*.less',function(){
+	gulp.watch('site/public/stylesheets/less/*.less',function(){
 		gulp.run('less')
 		//gulp.run('uncss')
 	})

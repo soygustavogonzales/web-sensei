@@ -1,3 +1,4 @@
 HTML/
 Documentation/
 node_modules/
+*.bak

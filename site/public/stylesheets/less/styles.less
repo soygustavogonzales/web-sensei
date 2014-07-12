@@ -1,34 +1,27 @@
-@color1:rgba(123,207,47,.8);//verde principal
-@color2:rgba(255, 255, 255, 0.5);//blanco puro
+@import "variables/variables.less";
+
 body{
 	.top{
-		background:#aae079; 
-		background: url(/img/bg-green.png);
-		background: @color1;
-		color:@color2;
+		background:rgb(red(@color2),green(@color2),blue(@color2)); 
+		background: @color2;
 		z-index: 1001;
 		position: relative;
 	}
 	.header{
-		background:#aae079; 
-		background: url(/img/bg-green.png);
-		background: @color1;
+		background:rgb(red(@color2),green(@color2),blue(@color2)); 
+		background: @color2;
 		position: relative;
 		z-index: 1001;
-		color:@color2;
 		.nabvar{
 			.container{
 				.navbar-header{
-						color:white;
 							a{
 									h1{
-										color:white;
 									}
 							.collapse{
 								ul{
 									li{
 										a{
-										color:white !important;
 
 										}
 									}

@@ -1,27 +1,14 @@
 body .top {
-  background: #aae079;
-  background: url(/img/bg-green.png);
-  background: rgba(123, 207, 47, 0.8);
-  color: rgba(255, 255, 255, 0.5);
+  background: #ffffff;
+  background: rgba(255, 255, 255, 0.6);
   z-index: 1001;
   position: relative;
 }
 body .header {
-  background: #aae079;
-  background: url(/img/bg-green.png);
-  background: rgba(123, 207, 47, 0.8);
+  background: #ffffff;
+  background: rgba(255, 255, 255, 0.6);
   position: relative;
   z-index: 1001;
-  color: rgba(255, 255, 255, 0.5);
-}
-body .header .nabvar .container .navbar-header {
-  color: white;
-}
-body .header .nabvar .container .navbar-header a h1 {
-  color: white;
-}
-body .header .nabvar .container .navbar-header a .collapse ul li a {
-  color: white !important;
 }
 body #fullpage #section1 .slide .container .row .title {
   margin-top: -4em;
