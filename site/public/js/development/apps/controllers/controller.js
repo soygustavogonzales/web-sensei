@@ -44,7 +44,8 @@ myApp.controller('ctrlContentVideos', ['$scope','srvData','$interval', function 
 	$scope.listVideos = [];
 
 	$scope.$watch('listVideos',function(){
-		console.log($scope.listVideos)
+		if($scope.listVideos.length)
+			console.log($scope.listVideos)
 	})
 
 	$scope.showVideos = function(){
@@ -105,7 +106,8 @@ myApp.controller('ctrlSlidesZone', ['$scope','srvData', function ($scope,srvData
 myApp.controller('ctrlSearch', ['$scope', function ($scope) {
 
 	$scope.$watch('search',function(){
-		console.log($scope.search)
+		if($scope.search)
+			console.log($scope.search)
 	})
 
 	var btnSearch = angular.element('.btnSearch');
