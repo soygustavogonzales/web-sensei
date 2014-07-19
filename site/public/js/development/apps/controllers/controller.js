@@ -38,6 +38,7 @@ myApp.controller('ctrlContentProfesores', ['$scope','srvData','$interval', funct
 			//$scope.listTeachers.length = 0;
 	}	
 }])
+
 myApp.controller('ctrlContentVideos', ['$scope','srvData','$interval', function ($scope,srvData,$interval) {//controla la zona de videos
 	var totalVideos = 12;
 	$scope.listVideos = [];
@@ -78,17 +79,6 @@ myApp.controller('ctrlContentVideos', ['$scope','srvData','$interval', function 
 	}
 
 
-	/*
-	{
-		urlImage:"",
-		urlVideo:""
-	}
-	*/
-	/*
-	for (var i = 12 ; i > 0; i--) {
-		$scope.listVideos.push({urlImage:'/img/home/fondos/fondo'+i+'.jpg',urlVideo:''});
-	};
-	*/
 
 }])
 
