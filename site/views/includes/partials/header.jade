@@ -1,0 +1,29 @@
+.top
+	.container
+		ul.loginbar(class="pull-right")
+			li
+				a.btnRegister(href="#")|Register
+			li.devider
+			li
+				a.btnLogin(href="#")|Login
+header.header
+	.navbar(class="navbar-default",role='navigation')
+		.container
+			.navbar-header
+				button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-responsive-collapse')
+					span.sr-only| Toggle navigation
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+				a.navbar-brand(href='index.html')
+					h1(style="")
+						i.fa(class="fa-penci-square")
+						|Sensei
+			.collapse(class="navbar-collapse navbar-responsive-collapse")
+					ul.nav(class="navbar-nav navbar-right")
+						li.dropdown.active
+							a.dropdown-toggle(href='#', data-toggle='dropdown', data-hover='dropdown', data-delay='0', data-close-others='false')
+								|Inicio
+						li.dropdown
+							a.dropdown-toggle(href='#', data-toggle='dropdown', data-hover='dropdown', data-delay='0', data-close-others='false')
+								|Blog

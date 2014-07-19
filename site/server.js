@@ -11,6 +11,7 @@ app.configure(function(){
 	var oneYear = 31556926;
 	app.set('port',4500||process.env.PORT)
 	app.use(express.cookieParser());
+	app.locals.pretty = true;
 	app.use(express.bodyParser())
 	app.use(express.methodOverride())
 	app.use(express.static(__dirname+'/public'),{maxAge:oneYear})

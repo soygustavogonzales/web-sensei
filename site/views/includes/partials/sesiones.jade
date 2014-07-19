@@ -1,0 +1,12 @@
+.slide(ng-controller="ctrlContentVideos")
+	.container
+		.row
+			h3.title.text-center|Mira como ellos ya estan aprendiendo!!
+			hr
+			button(ng-click="showVideos()")|show
+			button(ng-click="hideVideos()")|hide
+		.row.servive-block
+			.boxes.col-xs-6.col-md-3.col-sm-6(ng-repeat="(key, val) in listVideos")
+				.boxV.servive-block-in.servive-block-colored.servive-block-green
+						img(src="{{val.urlImage}}", alt="")
+						i.glyphicon.glyphicon-play

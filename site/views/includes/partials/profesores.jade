@@ -1,0 +1,14 @@
+.slide(ng-controller="ctrlContentProfesores")
+	.container
+		.row
+			h3.title.text-center|Encontramos estos profesores para ti!!
+			hr
+			button(ng-click="showTeachers()")|show
+			button(ng-click="hideTeachers()")|hide
+		.row.servive-block
+			.boxes.col-md-6.col-sm-6(ng-repeat="(key, val) in listTeachers")
+				.servive-block-in.servive-block-colored.servive-block-blue
+					h4|Awesome Green Box
+					div
+						i.icon-bullhorn
+					p|Donec id elit non mi porta gravida
