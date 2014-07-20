@@ -98,3 +98,7 @@ body #fullpage #section2 footer.footer {
 body #fullpage #section2 .copyright {
   margin: -4em 0 0 0;
 }
+#cajasVideos .mix,
+#cajasTeachers .mix {
+  display: none;
+}

@@ -3,83 +3,55 @@ myApp.service('srvData', [function () {
 
 }])
 
-myApp.controller('ctrlContentProfesores', ['$scope','srvData','$interval', function ($scope,srvData,$interval) {
-	var totalTeachers = 6;
+myApp.controller('ctrlContentProfesores', ['$scope','srvData','efx','$interval', function ($scope,srvData,efx,$interval) {
+
+	var totalTeachers = 7;
 	$scope.listTeachers = [];
-
-	$scope.showTeachers = function(){
-			var i = 1;
-			var stop = $interval(function(){
-				//console.log(srvData.data)
-				$scope.listTeachers.push({urlImage:'/img/home/fondos/fondo'+i+'.jpg',urlVideo:''});
-				i++;
-				if(i>totalTeachers){
-					$interval.cancel(stop);
-					//stop = undefined;
-					i = 1;
-				}
-			},100)
+	var uploadTeachers = function(){
+		var cont = totalTeachers;
+		while(--cont){
+			$scope.listTeachers.push({urlImage:'/img/home/fondos/fondo'+cont+'.jpg',urlVideo:''})
+		}	
 	}
-	$scope.hideTeachers = function(){
-		if($scope.listTeachers.length=totalTeachers){
+	
+	uploadTeachers();
 
-			var i = 11;
-			var finish = $interval(function(){
-				$scope.listTeachers.splice(i,1)
-				i--;
-				if(i==-1){
-					$interval.cancel(finish);
-					//stop = undefined;
-					i = 11;
-				}			
-			},100)
+	var downloadTeachers = function(){
+		var cont = totalTeachers;
+		while(--cont){
+			$scope.listTeachers.splice(cont,1)
 		}
-			
-			//$scope.listTeachers.length = 0;
-	}	
+	}
+
+	efx.startMixiupTeachers();
+
 }])
 
-myApp.controller('ctrlContentVideos', ['$scope','srvData','$interval', function ($scope,srvData,$interval) {//controla la zona de videos
-	var totalVideos = 12;
+myApp.controller('ctrlContentVideos', ['$scope','srvData','efx','$interval', function ($scope,srvData,efx,$interval) {//controla la zona de videos
+
+	var totalTeachers = 13;
 	$scope.listVideos = [];
+		$('.showVideos,.hideVideos').click(function(event) {
+			console.log("click "+this.className)
+		});
 
-	$scope.$watch('listVideos',function(){
-		if($scope.listVideos.length)
-			console.log($scope.listVideos)
-	})
-
-	$scope.showVideos = function(){
-			var i = 1;
-			var stop = $interval(function(){
-				//console.log(srvData.data)
-				$scope.listVideos.push({urlImage:'/img/home/fondos/fondo'+i+'.jpg',urlVideo:''});
-				i++;
-				if(i>totalVideos){
-					$interval.cancel(stop);
-					//stop = undefined;
-					i = 1;
-				}
-			},100)
+	var uploadVideos = function(){
+		var cont = totalTeachers;
+		while(--cont){
+			$scope.listVideos.push({urlImage:'/img/home/fondos/fondo'+cont+'.jpg',urlVideo:''})
+		}	
 	}
-	$scope.hideVideos = function(){
-		if($scope.listVideos.length=totalVideos){
+	
+	uploadVideos();
 
-			var i = 11;
-			var finish = $interval(function(){
-				$scope.listVideos.splice(i,1)
-				i--;
-				if(i==-1){
-					$interval.cancel(finish);
-					//stop = undefined;
-					i = 11;
-				}			
-			},100)
+	var downloadVideos = function(){
+		var cont = totalTeachers;
+		while(--cont){
+			$scope.listVideos.splice(cont,1)
 		}
-			
-			//$scope.listVideos.length = 0;
 	}
 
-
+	efx.startMixiupVideos();
 
 }])
 

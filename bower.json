@@ -13,6 +13,7 @@
     "jquery-ui":"latest",
     "flatstrap":"latest",
     "animatescroll":"latest",
+    "mixitup":"https://github.com/patrickkunka/mixitup.git",
     "fullpage":"https://github.com/alvarotrigo/fullPage.js.git"
     },
   "description": "sensei web",
