@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	/*
+	*/
+		#cajasVideos .mix{
+			display: none;
+		}
+	.box{
+		width: 200px;
+		height: 200px;
+		background: #ede;
+	}
+	</style>
+</head>
+<body>
+<button class="show">|all</button>
+<button class="hide">|nothing</button>
+
+	<div id="cajasVideos">
+		<li class="mix box cat-1"></li>
+		<li class="mix box cat-1"></li>
+		<li class="mix box cat-1"></li>
+		<li class="mix box cat-1"></li>
+		<li class="mix box cat-1"></li>
+	</div>
+	<script src="../../jquery/dist/jquery.min.js"></script>
+	<script src="jquery.mixitup.js"></script>
+	<script>
+	console.log($('button[name="show"]'))
+	$('#cajasVideos').mixItUp()
+	$('.show').click(function(event) {
+		$('#cajasVideos').mixItUp('filter', '.cat-1')
+	});
+	$('.hide').click(function(event) {
+		$('#cajasVideos').mixItUp('filter', '')
+	});
+	</script>
+</body>
+</html>
