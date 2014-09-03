@@ -5,7 +5,7 @@ myApp.service('srvData', [function () {
 
 myApp.controller('ctrlContentProfesores', ['$scope','srvData','efx','$interval', function ($scope,srvData,efx,$interval) {
 
-	var totalTeachers = 7;
+	var totalTeachers = 13;
 	$scope.listTeachers = [];
 	var uploadTeachers = function(){
 		var cont = totalTeachers;
@@ -29,20 +29,25 @@ myApp.controller('ctrlContentProfesores', ['$scope','srvData','efx','$interval',
 
 myApp.controller('ctrlContentVideos', ['$scope','srvData','efx','$interval', function ($scope,srvData,efx,$interval) {//controla la zona de videos
 
-	var totalTeachers = 13;
+	var totalTeachers = 13+4;
 	$scope.listVideos = [];
 		$('.showVideos,.hideVideos').click(function(event) {
 			console.log("click "+this.className)
 		});
 
-	var uploadVideos = function(){
+	var uploadVideos = function(callback){
 		var cont = totalTeachers;
 		while(--cont){
 			$scope.listVideos.push({urlImage:'/img/home/fondos/fondo'+cont+'.jpg',urlVideo:''})
-		}	
+		}
+		return callback()	
 	}
 	
-	uploadVideos();
+	uploadVideos(function(){
+		//efx.startSlimScrollVideos();
+		efx.startMixiupVideos();
+
+	});
 
 	var downloadVideos = function(){
 		var cont = totalTeachers;
@@ -50,8 +55,6 @@ myApp.controller('ctrlContentVideos', ['$scope','srvData','efx','$interval', fun
 			$scope.listVideos.splice(cont,1)
 		}
 	}
-
-	efx.startMixiupVideos();
 
 }])
 

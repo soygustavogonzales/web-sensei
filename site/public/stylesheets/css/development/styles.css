@@ -11,7 +11,12 @@ body .header {
   z-index: 1001;
 }
 body #fullpage #section1 .slide .container .row .title {
-  margin-top: -4em;
+  margin-top: -4.5em;
+}
+@media (max-height: 600) {
+  body #fullpage #section1 .slide .container .row .title {
+    margin-top: -3em;
+  }
 }
 body #fullpage #section1 .slide .container .row .boxes:hover {
   cursor: pointer;
@@ -77,10 +82,10 @@ body #fullpage #section1 .slide .container .row .boxes .boxV i:hover {
   font-size: 4.2rem;
 }
 body #fullpage #section1 .slide .container .row:nth-child(2) {
-  margin-top: -12px;
+  margin-top: -70px;
 }
 body #fullpage #section1 .slide .container .row:first-child + .row {
-  margin-top: -12px;
+  margin-top: -70px;
 }
 body #fullpage #section2 .clients .row:first-child {
   margin-top: 0em;
@@ -98,7 +103,27 @@ body #fullpage #section2 footer.footer {
 body #fullpage #section2 .copyright {
   margin: -4em 0 0 0;
 }
+#cajasVideos {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  max-height: 500px;
+  padding: 18px 10px 12px;
+}
 #cajasVideos .mix,
 #cajasTeachers .mix {
   display: none;
+}
+#cajasVideos .boxes img {
+  transition-delay: .15s;
+}
+#cajasVideos .boxes img:hover,
+#cajasTeachers .boxes .boxT:hover {
+  box-shadow: 0 0 30px 5px #969696;
+  opacity: .9;
+}
+#cajasTeachers {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  max-height: 500px;
+  padding: 18px 10px 12px;
 }

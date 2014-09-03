@@ -4,7 +4,8 @@
 			h3.title.text-center|Mira como ellos ya estan aprendiendo!!
 			hr
 		.row.servive-block#cajasVideos
-			.boxes.mix.cat-1.col-xs-6.col-md-3.col-sm-6(ng-repeat="(key, val) in listVideos")
-				.boxV.servive-block-in.servive-block-colored.servive-block-green
-						img(src="{{val.urlImage}}", alt="")
-						i.glyphicon.glyphicon-play
+			#wrapVideos
+				.boxes.mix.cat-1.col-xs-6.col-md-3.col-sm-6(ng-repeat="(key, val) in listVideos")
+					.boxV.servive-block-in.servive-block-colored.servive-block-green
+							img(src="{{val.urlImage}}", alt="")
+							i.glyphicon.glyphicon-play

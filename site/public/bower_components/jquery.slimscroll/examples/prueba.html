@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="">
+	<style>
+*{
+	border:0;
+	margin: 0;
+	padding: 0;
+}
+		.wrap{
+			background: #F2F1F0;
+		}
+		.container >.paragraph{
+			width:  150px;
+			background: #666;
+			color: white;
+		}
+		.container3 > .paragraph{
+			width: 100%;
+			height: 150px;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<div class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam adipisci, voluptas eius tenetur incidunt vero!. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt maiores nostrum voluptates, quos similique velit commodi tempora quibusdam ipsa dolorem impedit voluptatibus aliquid vitae excepturi perspiciatis quae aliquam quo expedita!</div>
+</div>
+<div class="container2">
+	<div class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam adipisci, voluptas eius tenetur incidunt vero!. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt maiores nostrum voluptates, quos similique velit commodi tempora quibusdam ipsa dolorem impedit voluptatibus aliquid vitae excepturi perspiciatis quae aliquam quo expedita!</div>
+</div>
+<div class="wrap" style="width:100%;">
+	<div class="container3">
+		<div class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam adipisci, voluptas eius tenetur incidunt vero!. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt maiores nostrum voluptates, quos similique velit commodi tempora quibusdam ipsa dolorem impedit voluptatibus aliquid vitae excepturi perspiciatis quae aliquam quo expedita!</div>
+		<div class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam adipisci, voluptas eius tenetur incidunt vero!. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt maiores nostrum voluptates, quos similique velit commodi tempora quibusdam ipsa dolorem impedit voluptatibus aliquid vitae excepturi perspiciatis quae aliquam quo expedita!</div>
+	</div>
+</div>
+	<script src="../jquery.min.js"></script>
+	<script src="../jquery.slimscroll.js"></script>
+	<script>
+	$('.container,.container2').slimScroll({
+		height:'150px',
+		width:'150px'
+	})
+	$('.container3').slimScroll({
+		height:'150px',
+		width:'100%'
+	})
+
+	</script>
+</body>
+</html>
